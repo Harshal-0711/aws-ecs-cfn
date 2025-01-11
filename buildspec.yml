@@ -10,9 +10,9 @@ phases:
       - echo Build started on `date`
       - echo Building the Docker image...          
       - docker build -t mywebapp .
-      - docker tag mywebapp:latest 675467602881.dkr.ecr.ap-south-1.amazonaws.com/mywebapp:latest
+      - docker tag mywebapp:latest 675467602881.dkr.ecr.ap-south-1.amazonaws.com/mywebapp:1.0
   post_build:
     commands:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
-      - docker push 675467602881.dkr.ecr.ap-south-1.amazonaws.com/mywebapp:latest
+      - docker push 675467602881.dkr.ecr.ap-south-1.amazonaws.com/mywebapp:1.0
