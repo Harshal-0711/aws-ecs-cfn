@@ -16,4 +16,3 @@ hooks:
   ValidateService:
     - location: Scripts/dc4.sh
       timeout: 3600
-      runas: codedeployuser
