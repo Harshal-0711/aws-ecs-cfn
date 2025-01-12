@@ -44,7 +44,7 @@ Resources:
       ExecutionRoleArn: !Ref ExecutionRole
       ContainerDefinitions:
         - Name: deployment-example-container
-          Image: nginx:1.17.7
+          Image: 675467602881.dkr.ecr.ap-south-1.amazonaws.com/mywebapp:1.0
           PortMappings:
             - ContainerPort: 80
           LogConfiguration:
