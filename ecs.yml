@@ -44,7 +44,7 @@ Resources:
       ExecutionRoleArn: !Ref ExecutionRole
       ContainerDefinitions:
         - Name: deployment-example-container
-          Image: 675467602881.dkr.ecr.ap-south-1.amazonaws.com/mywebapp:1.0
+          Image: 675467602881.dkr.ecr.ap-south-1.amazonaws.com/mywebapp:latest
           PortMappings:
             - ContainerPort: 80
           LogConfiguration:
