@@ -1,19 +1,19 @@
 version: 0.0
 os: linux
 files:
-  - source: * 
+  - source: aws-ecs-cfn
     destination: /home/ec2-user
 hooks:
   BeforeInstall:
-    - location: Scripts/UnzipResourceBundle.sh
-    - location: Scripts/UnzipDataBundle.sh
+    - location: Scripts/dc.sh
+    - location: Scripts/dc1.sh
   AfterInstall:
-    - location: Scripts/RunResourceTests.sh
+    - location: Scripts/dc2.sh
       timeout: 180
   ApplicationStart:
-    - location: Scripts/RunFunctionalTests.sh
+    - location: Scripts/dc3.sh
       timeout: 3600
   ValidateService:
-    - location: Scripts/MonitorService.sh
+    - location: Scripts/dc4.sh
       timeout: 3600
       runas: codedeployuser
