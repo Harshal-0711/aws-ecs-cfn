@@ -1,1 +1,1 @@
-FROM niginx:latest
+FROM nginx:latest
