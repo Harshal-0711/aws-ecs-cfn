@@ -6,7 +6,6 @@ files:
 hooks:
   BeforeInstall:
     - location: Scripts/dc.sh
-    - location: Scripts/dc1.sh
   AfterInstall:
     - location: Scripts/dc2.sh
       timeout: 180
